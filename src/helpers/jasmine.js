@@ -3,7 +3,7 @@
 const TestMyBot = require('../testmybot')
 const moduleinfo = require('../util/moduleinfo')
 
-const defaultTimeout = 400000
+const defaultTimeout = 150000
 
 module.exports.setupJasmineTestCases = ({ timeout: timeout = defaultTimeout, testcaseSelector, tmb } = {}) => {
   if (!tmb) tmb = new TestMyBot()
