@@ -1,21 +1,14 @@
 {
-  "name": "testmybot",
-  "version": "1.4.3",
-  "engines": {
-    "node": ">=6.0"
+  "author": {
+    "name": "Florian Treml"
   },
-  "scripts": {
-    "build": "npm run eslint && rollup -c",
-    "eslint": "eslint \"./src/**/*.js\"",
-    "newpatch": "npm version patch"
+  "bugs": {
+    "url": "https://github.com/codeforequity-at/testmybot/issues"
   },
-  "description": "Continuous Testing for your Chatbots",
-  "main": "index.js",
-  "author": "Florian Treml",
-  "license": "MIT",
+  "bundleDependencies": false,
   "dependencies": {
     "async": "^2.1.5",
-    "botium-core": "https://github.com/tchikl-h/botium-core.git",
+    "botium-core": "../botium-core",
     "chai": "^4.1.2",
     "debug": "^3.1.0",
     "exit-hook": "^1.1.1",
@@ -26,6 +19,8 @@
     "mocha": "^5.0.0",
     "mochawesome": "^3.0.2"
   },
+  "deprecated": false,
+  "description": "Continuous Testing for your Chatbots",
   "devDependencies": {
     "eslint": "^4.15.0",
     "eslint-config-standard": "^11.0.0-beta.0",
@@ -39,17 +34,26 @@
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-resolve": "^3.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codeforequity-at/testmybot.git"
+  "engines": {
+    "node": ">=6.0"
   },
+  "homepage": "https://github.com/codeforequity-at/testmybot#readme",
   "keywords": [
     "continuous",
     "testing",
     "chatbot"
   ],
-  "bugs": {
-    "url": "https://github.com/codeforequity-at/testmybot/issues"
+  "license": "MIT",
+  "main": "index.js",
+  "name": "testmybot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeforequity-at/testmybot.git"
   },
-  "homepage": "https://github.com/codeforequity-at/testmybot#readme"
+  "scripts": {
+    "build": "npm run eslint && rollup -c",
+    "eslint": "eslint \"./src/**/*.js\"",
+    "newpatch": "npm version patch"
+  },
+  "version": "1.4.3"
 }
